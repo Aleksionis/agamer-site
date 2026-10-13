@@ -1,16 +1,6 @@
-FROM node:20-alpine AS build
-WORKDIR /app
-COPY package*.json ./
-RUN npm ci
-COPY . .
-RUN npm run build
-
 FROM node:20-alpine
 WORKDIR /app
-ENV NODE_ENV=production PORT=80
-COPY package*.json ./
-RUN npm ci --omit=dev
-COPY server.js ./
-COPY --from=build /app/dist ./dist
+COPY . .
+RUN npm ci && npm run build
 EXPOSE 80
-CMD ["npm","start"]
+CMD ["npm", "start"]
