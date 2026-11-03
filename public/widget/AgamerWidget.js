@@ -1,4 +1,4 @@
-// Agamer (AGAMER) price widget for Scriptable — TON blockchain — v2.9
+// Agamer (AGAMER) price widget for Scriptable — TON blockchain — v3.0
 // Data: GeckoTerminal (all pools: STON.fi, DeDust) + DexScreener fallback
 const TOKEN = "EQA5qN_40wF_i8ZPfX5YD-ypK-PagNSbvSrrtqYDZ45pbIKs";
 const LOGO_B64 = "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"; // embedded coin logo (96x96 JPEG)
@@ -145,6 +145,43 @@ function mergeLegs(t, n, tonUsd) {
   if (!added) return;
   t.dex = dexLabel(t.legs, t.dex); recalc(t, tonUsd);
 }
+// v3.0: a pool's /events view shows only that pool's part of a routed buy (Omniston/aggregator), and tonapi does not tag the
+// Omniston USDT legs as JettonSwap. Read the whole event once: all AGAMER swaps + AGAMER arriving at the buyer after a USDT hop.
+const DD2RAW = new Set(Object.values(POOL_RAW));
+function routedLegs(e) {
+  if (e.aborted || e.in_progress) return null;
+  const ok = a => (a.status || "ok") === "ok", legs = [], wallets = new Set();
+  for (const a of e.actions) {
+    if (a.type !== "JettonSwap") continue; if (!ok(a)) return null;
+    const s = a.JettonSwap, inA = s.jetton_master_in && s.jetton_master_in.address === RAW_TOKEN, outA = s.jetton_master_out && s.jetton_master_out.address === RAW_TOKEN;
+    if (!inA && !outA) continue;
+    const other = outA ? s.jetton_master_in : s.jetton_master_out, tonSide = outA ? s.ton_in != null : s.ton_out != null;
+    const osym = other ? other.symbol || "" : "TON", qd = other ? 10 ** (other.decimals != null ? other.decimals : (/USD/.test(osym) ? 6 : 9)) : 1e9;
+    const cur = tonSide || osym === "pTON" || osym === "TON" ? "TON" : /^USD/.test(osym) ? "USD" : "";
+    const ag = (outA ? +s.amount_out : +s.amount_in) / 1e9;
+    const q = outA ? (s.ton_in != null ? s.ton_in / 1e9 : +s.amount_in / qd) : (s.ton_out != null ? s.ton_out / 1e9 : +s.amount_out / qd);
+    legs.push({ ag, q, cur, side: outA ? 1 : -1, dex: DEXN[s.dex] || "" });
+    if (outA && s.user_wallet) wallets.add(s.user_wallet.address);
+  }
+  if (!legs.length) return null;
+  if (legs.some(l => l.side !== legs[0].side)) return { arb: 1 }; // buy+sell in one trace = arbitrage
+  if (legs[0].side > 0) {
+    let lastUsd = NaN;
+    for (const a of e.actions) {
+      if (a.type !== "JettonTransfer" || !ok(a)) continue;
+      const t = a.JettonTransfer, jm = t.jetton || {};
+      if (/USD/.test(jm.symbol || "")) { lastUsd = +t.amount / 10 ** (jm.decimals != null ? jm.decimals : 6); continue; }
+      if (jm.address !== RAW_TOKEN) continue;
+      const rw = t.recipient && t.recipient.address, sd = t.sender || {};
+      if (!wallets.has(rw) || sd.address === rw) continue;
+      const amt = +t.amount / 1e9; if (legs.some(l => near(l.ag, amt, 0.001))) continue;
+      const nm = (sd.name || "").toLowerCase();
+      const dex = /ston/.test(nm) ? "STON.fi" : (/dedust/.test(nm) || DD2RAW.has(sd.address)) ? "DeDust" : "";
+      legs.push({ ag: amt, q: lastUsd, cur: isNaN(lastUsd) ? "" : "USD", side: 1, dex }); lastUsd = NaN;
+    }
+  }
+  return { kind: legs[0].side > 0 ? "buy" : "sell", legs: legs.map(l => ({ ag: l.ag, q: l.q, cur: l.cur, dex: l.dex })) };
+}
 async function fetchTrades(tonUsd, withGT = true) {
   const all = {}, gts = [], okPool = {};
   for (const p of POOLS) {
@@ -166,6 +203,21 @@ async function fetchTrades(tonUsd, withGT = true) {
   }
   // v2.8: drop single-transaction arbitrage (buy+sell of the same AGAMER in one event across pools)
   const arbs = Object.values(all).filter(t => t.arb); arbs.forEach(t => delete all[t.hash]);
+  // v3.0: complete each on-chain trade from its full event (cached for good; at most 6 new event reads per refresh)
+  let budget = 6;
+  for (const t of Object.values(all).sort((a, b) => b.time - a.time)) {
+    const ck = "fe3:" + t.hash, c = cacheGet(ck); let r = c && c.body;
+    if (!r) {
+      if (budget-- <= 0 || DEAD["tonapi.io"]) continue;
+      try { const e = await once(`${TONAPI}/events/${t.hash}`); if (e.in_progress) continue; r = routedLegs(e) || { none: 1 }; cachePut(ck, r); }
+      catch (e) { continue; }
+    }
+    if (r.arb) { delete all[t.hash]; arbs.push(t); continue; }
+    if (!r.legs || r.kind !== t.kind || r.legs.reduce((s, l) => s + l.ag, 0) + 0.01 < t.agamer) continue;
+    const def = t.legs[0].dex;
+    t.legs = r.legs.map(l => ({ ag: l.ag, q: l.q, usd: l.cur === "TON" ? l.q * tonUsd : l.cur === "USD" ? l.q : NaN, dex: l.dex || def }));
+    t.dex = dexLabel(t.legs, t.dex); recalc(t, tonUsd); t.full = true;
+  }
   // v2.7: legs priced in an unrelated token: take the exact USD from GeckoTerminal (same tx hash), else drop the trade.
   for (const t of Object.values(all)) {
     if (!isNaN(t.usd)) continue;
