@@ -1,10 +1,10 @@
-// Agamer (AGAMER) price widget for Scriptable — TON blockchain — v3.0
+// Agamer (AGAMER) price widget for Scriptable — TON blockchain — v3.1
 // Data: GeckoTerminal (all pools: STON.fi, DeDust) + DexScreener fallback
 const TOKEN = "EQA5qN_40wF_i8ZPfX5YD-ypK-PagNSbvSrrtqYDZ45pbIKs";
 const LOGO_B64 = "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"; // embedded coin logo (96x96 JPEG)
 const GT = "https://api.geckoterminal.com/api/v2/networks/ton";
 const BG = Color.black();
-const GREEN = new Color("#2ee59d"), RED = new Color("#ff5c7a"), GREY = new Color("#9aa3c7");
+const GREEN = new Color("#2ee59d"), RED = new Color("#ff5c7a"), GREY = new Color("#9aa3c7"), GOLD = new Color("#ffc94d"); // v3.1: GOLD = all-pools total
 
 // ---- Resilient HTTP: sequential, per-host throttle, retry/backoff on 429/5xx, last-good cache per URL ----
 const FM = (typeof FileManager !== "undefined") ? FileManager.local() : null;
@@ -272,14 +272,17 @@ async function fetchData() {
       const qUsd = p.q === "TON" ? tonUsd : 1;
       const usd = rq / ra * qUsd, liq = 2 * rq * qUsd;
       const g = gt[p.addr];
-      pools.push({ ...p, name: p.pair, usd, liq, vol: sv != null ? sv : (g ? +(g.volume_usd.h24 || 0) : 0), ch: g ? +(g.price_change_percentage.h24 || 0) : 0, src: "direct" });
+      pools.push({ ...p, name: p.pair, usd, liq, resAg: ra, resQ: rq, vol: sv != null ? sv : (g ? +(g.volume_usd.h24 || 0) : 0), ch: g ? +(g.price_change_percentage.h24 || 0) : 0, src: "direct" });
     } catch (e) {
-      const g = gt[p.addr]; if (g) pools.push({ ...p, name: p.pair, usd: +g.base_token_price_usd, liq: +g.reserve_in_usd, vol: +(g.volume_usd.h24 || 0), ch: +(g.price_change_percentage.h24 || 0), src: "gecko" });
+      const g = gt[p.addr]; if (g) { const usd = +g.base_token_price_usd, liq = +g.reserve_in_usd, qUsd = p.q === "TON" ? tonUsd : 1; // v3.1: reserves estimated (half/half)
+        pools.push({ ...p, name: p.pair, usd, liq, resAg: usd > 0 ? liq / 2 / usd : 0, resQ: qUsd > 0 ? liq / 2 / qUsd : 0, est: true, vol: +(g.volume_usd.h24 || 0), ch: +(g.price_change_percentage.h24 || 0), src: "gecko" }); }
     }
   }
   if (!pools.length) throw new Error("no pool data");
   pools.sort((a, b) => b.liq - a.liq);
   const liq = pools.reduce((s, p) => s + p.liq, 0), vol = pools.reduce((s, p) => s + p.vol, 0);
+  // v3.1: totals across all pools: AGAMER available + summed TON (Gram) / USDT side
+  const totAg = pools.reduce((s, p) => s + (p.resAg || 0), 0), totTon = pools.reduce((s, p) => s + (p.q === "TON" ? p.resQ || 0 : 0), 0), totUsdt = pools.reduce((s, p) => s + (p.q === "TON" ? 0 : p.resQ || 0), 0);
   const price = pools.reduce((s, p) => s + p.usd * p.liq, 0) / liq;
   const priceTon = price / tonUsd;
   let ch = parseFloat(String(rates[TOKEN] ? rates[TOKEN].diff_24h.USD : "0").replace("\u2212", "-").replace("+", ""));
@@ -310,13 +313,16 @@ async function fetchData() {
   } catch (e) {}
   if (!candles.length) candles = [{ t: 0, o: price, h: price, l: price, c: price, v: 0 }];
   TONUSD = tonUsd;
-  return { price, priceTon, tonUsd, ch, liq, vol, fdv, mc: fdv, supply, holders, pools, candles, main };
+  return { price, priceTon, tonUsd, ch, liq, vol, fdv, mc: fdv, supply, holders, pools, candles, main, totAg, totTon, totUsdt };
 }
 
 const f$ = v => v == null ? "—" : v >= 1e6 ? "$" + (v / 1e6).toFixed(2) + "M" : v >= 1e3 ? "$" + (v / 1e3).toFixed(1) + "K" : "$" + v.toFixed(v < 1 ? 5 : 2);
 let TONUSD = 0;
 const gram = v => { if (v == null || !TONUSD) return ""; const g = v / TONUSD; return " · " + (g >= 1000 ? Math.round(g).toLocaleString("en-US") : g >= 1 ? g.toFixed(2) : g.toFixed(5)) + " Gram"; };
 const fg = v => f$(v) + gram(v);
+// v3.1: whole-unit amounts with separators; one pool's reserves
+const fa = v => (+v || 0).toLocaleString("en-US", { maximumFractionDigits: v >= 1000 ? 0 : 2, minimumFractionDigits: v >= 1000 ? 0 : 2 });
+const fres = p => fa(p.resAg) + " AGAMER + " + fa(p.resQ) + " " + (p.q === "TON" ? "Gram" : p.q) + (p.est ? " ≈" : "");
 const fp = v => (v >= 0 ? "▲ +" : "▼ ") + v.toFixed(2) + "%";
 
 // v2.4 chart (same look as Android ChartRenderer / the price bot): grid, $ + Gram left axis, local-time x labels,
@@ -415,9 +421,9 @@ function txt(st, s, size, color = Color.white(), bold = false) {
 }
 
 const I18N = {
-  en: { tPools: "Pools", tTrades: "Recent trades", buy: "Buy", sell: "Sell", price: "Price", open: "Tap a trade to open it in Tonviewer", pools: n => `${n} pools • TON`, poolsS: n => `${n} pools`, vol: "Volume 24h", liq: "Liquidity", liqS: "Liq.", fdv: "FDV", holders: "Holders", upd: "updated", err: "No data: " },
-  ru: { tPools: "Пулы", tTrades: "Последние сделки", buy: "Покупка", sell: "Продажа", price: "Цена", open: "Нажми на сделку, чтобы открыть её в Tonviewer", pools: n => `${n} пулов • TON`, poolsS: n => `${n} пул.`, vol: "Объём 24ч", liq: "Ликвидность", liqS: "Лик.", fdv: "FDV", holders: "Холдеры", upd: "обновлено", err: "Нет данных: " },
-  fa: { tPools: "استخرها", tTrades: "معاملات اخیر", buy: "خرید", sell: "فروش", price: "قیمت", open: "برای مشاهده در Tonviewer روی معامله بزنید", pools: n => `${n} استخر • TON`, poolsS: n => `${n} استخر`, vol: "حجم ۲۴س", liq: "نقدینگی", liqS: "نقدینگی", fdv: "ارزش کل", holders: "دارندگان", upd: "به‌روزرسانی", err: "داده‌ای نیست: " },
+  en: { tPools: "Pools", tTrades: "Recent trades", buy: "Buy", sell: "Sell", price: "Price", open: "Tap a trade to open it in Tonviewer", pools: n => `${n} pools • TON`, poolsS: n => `${n} pools`, vol: "Volume 24h", liq: "Liquidity", liqS: "Liq.", fdv: "FDV", holders: "Holders", upd: "updated", total: "All pools", avail: "AGAMER available in all pools", res: "Reserves", err: "No data: " },
+  ru: { tPools: "Пулы", tTrades: "Последние сделки", buy: "Покупка", sell: "Продажа", price: "Цена", open: "Нажми на сделку, чтобы открыть её в Tonviewer", pools: n => `${n} пулов • TON`, poolsS: n => `${n} пул.`, vol: "Объём 24ч", liq: "Ликвидность", liqS: "Лик.", fdv: "FDV", holders: "Холдеры", upd: "обновлено", total: "Все пулы", avail: "AGAMER доступно во всех пулах", res: "Резервы", err: "Нет данных: " },
+  fa: { tPools: "استخرها", tTrades: "معاملات اخیر", buy: "خرید", sell: "فروش", price: "قیمت", open: "برای مشاهده در Tonviewer روی معامله بزنید", pools: n => `${n} استخر • TON`, poolsS: n => `${n} استخر`, vol: "حجم ۲۴س", liq: "نقدینگی", liqS: "نقدینگی", fdv: "ارزش کل", holders: "دارندگان", upd: "به‌روزرسانی", total: "همه استخرها", avail: "AGAMER موجود در همه استخرها", res: "ذخایر", err: "داده‌ای نیست: " },
 };
 // Widget Parameter: "lang,period,style" e.g. "ru,7d" (price line, default) / "ru,7d,candles" / "en,24h,hist" / "fa,30d"
 const QP = (typeof args !== "undefined" && args.queryParameters) || {};
@@ -472,6 +478,7 @@ async function build(fam) {
   if (fam === "large") {
     w.addSpacer(4); line(w, T.tTrades, 9, GREY, true); trades.slice(0, 4).forEach(trow); // v2.4: 5 -> 4 rows to make room for the taller chart
     w.addSpacer(4); line(w, T.tPools, 9, GREY, true);
+    row(w, [st => txt(st, "Σ " + T.total + " (" + d.pools.length + ")", 9, GOLD, true), sp(), st => txt(st, fa(d.totAg) + " AGAMER  " + fa(d.totTon) + " Gram + " + fa(d.totUsdt) + " USDT", 9, GOLD, true)]); // v3.1
     d.pools.slice(0, 3).forEach(p => row(w, [st => txt(st, p.dex + " · " + p.pair, 9, GREY), sp(), st => txt(st, "$" + p.usd.toFixed(5) + "  " + fg(p.liq), 9, Color.white())]));
   }
   w.addSpacer();
@@ -492,8 +499,13 @@ async function showTable() {
   add([tc("AGAMER  $" + d.price.toFixed(5), d.priceTon.toFixed(5) + " Gram • " + fp(d.ch), d.ch >= 0 ? GREEN : RED, 1, true)], 60);
   add([tc(T.vol, fg(d.vol), null, 1), tc(T.liq, fg(d.liq), null, 1), tc(T.fdv, fg(d.fdv), null, 1), tc(T.holders, String(d.holders), null, 1)], 50);
   add([tc(T.tPools + " (" + d.pools.length + ")", "", GREY, 1, true)], 36, HD);
-  d.pools.forEach(p => add([tc(p.dex, p.pair, null, 4), tc("$" + p.usd.toFixed(5) + gram(p.usd), T.price, null, 3), tc(fg(p.liq), T.liq, null, 3), tc(fg(p.vol), T.vol, null, 3)], 50, BK,
-    () => Safari.open("https://tonviewer.com/" + p.addr)));
+  // v3.1: all-pools total first (AGAMER available + summed Gram / USDT), then each pool with its own reserves
+  add([tc(T.total + " (" + d.pools.length + ")", T.avail, GOLD, 4, true), tc(fa(d.totAg) + " AGAMER", "Gram " + fa(d.totTon) + " • USDT " + fa(d.totUsdt), GOLD, 5, true), tc(fg(d.liq), T.liq, null, 3)], 56, HD);
+  d.pools.forEach(p => {
+    add([tc(p.dex, p.pair, null, 4), tc("$" + p.usd.toFixed(5) + gram(p.usd), T.price, null, 3), tc(fg(p.liq), T.liq, null, 3), tc(fg(p.vol), T.vol, null, 3)], 50, BK,
+      () => Safari.open("https://tonviewer.com/" + p.addr));
+    add([tc(T.res + ": " + fres(p), "", GREY, 1)], 30, BK, () => Safari.open("https://tonviewer.com/" + p.addr));
+  });
   add([tc(T.tTrades + " (" + trades.length + ")", T.open, GREY, 1, true)], 44, HD);
   const df = new DateFormatter(); df.dateFormat = "dd.MM HH:mm";
   trades.forEach(t => {
