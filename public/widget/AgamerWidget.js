@@ -1,4 +1,4 @@
-// Agamer (AGAMER) price widget for Scriptable — TON blockchain — v3.1
+// Agamer (AGAMER) price widget for Scriptable — TON blockchain — v3.2
 // Data: GeckoTerminal (all pools: STON.fi, DeDust) + DexScreener fallback
 const TOKEN = "EQA5qN_40wF_i8ZPfX5YD-ypK-PagNSbvSrrtqYDZ45pbIKs";
 const LOGO_B64 = "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"; // embedded coin logo (96x96 JPEG)
@@ -15,9 +15,16 @@ const cacheGet = u => { try { if (!FM) return null; const p = ckey(u); if (!FM.f
 const cachePut = (u, body) => { try { if (FM) FM.writeString(ckey(u), JSON.stringify({ t: Date.now(), body })); } catch (e) {} };
 const wait = ms => new Promise(r => (typeof Timer !== "undefined") ? Timer.schedule(ms, false, r) : setTimeout(r, ms));
 const LAST = {}, DEAD = {}; let STALE = 0;
+// v3.2: trades read from cache (tonapi failed): count + time of the oldest cached pool events, shown in the widget/app
+let TSTALE = 0, TASOF = 0;
+// v3.2: the per-host throttle is shared between runs (the app screen and the widget can run at the same time and
+// together hit GeckoTerminal twice as fast -> HTTP 429). Last request time per host is kept in a small file.
+const LFILE = FM ? FM.joinPath(CDIR, "last-host.json") : null;
+const lastGet = h => { try { if (LFILE && FM.fileExists(LFILE)) { const o = JSON.parse(FM.readString(LFILE)); return Math.max(LAST[h] || 0, +o[h] || 0); } } catch (e) {} return LAST[h] || 0; };
+const lastPut = h => { LAST[h] = Date.now(); try { if (!LFILE) return; let o = {}; try { if (FM.fileExists(LFILE)) o = JSON.parse(FM.readString(LFILE)); } catch (e) {} o[h] = LAST[h]; FM.writeString(LFILE, JSON.stringify(o)); } catch (e) {} };
 const GAP = h => /tonapi/.test(h) ? 1100 : /geckoterminal/.test(h) ? 2100 : 300;
 async function once(url) {
-  const host = url.split("/")[2], w = (LAST[host] || 0) + GAP(host) - Date.now(); if (w > 0) await wait(w); LAST[host] = Date.now();
+  const host = url.split("/")[2], w = Math.min(lastGet(host) + GAP(host) - Date.now(), 5000); if (w > 0) await wait(w); lastPut(host); // v3.2: shared across runs
   if (globalThis.FAULT && Math.random() < globalThis.FAULT) { const e = new Error("HTTP 429"); e.code = 429; throw e; }
   const r = new Request(url); r.headers = { Accept: "application/json" }; r.timeoutInterval = 30;
   const txt = await r.loadString(); const code = (r.response && r.response.statusCode) || 200;
@@ -119,7 +126,13 @@ function parseEvent(e, p, tonUsd) {
     if (!ag) return null;
     if (!q || Math.sign(ag) === Math.sign(q) || (p.q === "TON" && Math.abs(q) < 0.15)) {
       // v2.9: was "return null" (whole DeDust v2 trades vanished, aggregator trades lost this leg). Price it later.
-      if (!poolTon && !(p.q === "USDT" && q)) return null; // no swap payout seen: not a trade
+      if (!poolTon && !(p.q === "USDT" && q)) {
+        // v3.2: AGAMER left a DeDust v2 TON pool with no payout visible: the TON went in via the vault and the AGAMER was
+        // forwarded on (arbitrage bot: buy here, sell on STON.fi in the same event). Not shown on its own, but it marks the
+        // opposite leg seen in another pool as arbitrage (e.g. 04.11 20:26 "sell 119.82").
+        if (ag > 0) return { hint: true, hash: e.event_id, kind: "buy" };
+        return null; // no swap payout seen: not a trade
+      }
       q = NaN;
     }
     legs.push({ ag, q, usd: isNaN(q) ? NaN : Math.abs(q) * (p.q === "TON" ? tonUsd : 1), dex: p.dex });
@@ -183,7 +196,7 @@ function routedLegs(e) {
   return { kind: legs[0].side > 0 ? "buy" : "sell", legs: legs.map(l => ({ ag: l.ag, q: l.q, cur: l.cur, dex: l.dex })) };
 }
 async function fetchTrades(tonUsd, withGT = true) {
-  const all = {}, gts = [], okPool = {};
+  const all = {}, gts = [], okPool = {}, hints = {}; TSTALE = 0; TASOF = 0;
   for (const p of POOLS) {
     if (withGT) try { // GeckoTerminal: last 24h, exact USD at trade time
       (await j(`${GT}/pools/${p.addr}/trades`, 120000)).data.forEach(x => {
@@ -193,14 +206,18 @@ async function fetchTrades(tonUsd, withGT = true) {
           usd: +a.volume_in_usd, dex: p.dex, pair: p.pair, pool: p.addr, src: "gt", maker: a.tx_from_address });
       });
     } catch (e) {}
-    const st0 = STALE;
+    const st0 = STALE, eu = `${TONAPI}/accounts/${p.addr}/events?limit=40`;
     try { // tonapi: on-chain events; the same event_id appears under every pool it touched
-      (await j(`${TONAPI}/accounts/${p.addr}/events?limit=40`, 60000)).events.forEach(e => {
-        const t = parseEvent(e, p, tonUsd); if (!t) return; t.src = "tonapi";
+      (await j(eu, 60000)).events.forEach(e => {
+        const t = parseEvent(e, p, tonUsd); if (!t) return;
+        if (t.hint) { hints[t.hash] = t.kind; return; } // v3.2
+        t.src = "tonapi";
         if (all[e.event_id]) mergeLegs(all[e.event_id], t, tonUsd); else all[e.event_id] = t;
       }); okPool[p.addr] = STALE === st0;
+      if (!okPool[p.addr]) { TSTALE++; const c = cacheGet(eu); if (c && c.t && (!TASOF || c.t < TASOF)) TASOF = c.t; } // v3.2
     } catch (e) {}
   }
+  for (const h in hints) { const o = all[h]; if (o && o.kind !== hints[h]) o.arb = true; } // v3.2: other half of an arbitrage
   // v2.8: drop single-transaction arbitrage (buy+sell of the same AGAMER in one event across pools)
   const arbs = Object.values(all).filter(t => t.arb); arbs.forEach(t => delete all[t.hash]);
   // v3.0: complete each on-chain trade from its full event (cached for good; at most 6 new event reads per refresh)
@@ -421,9 +438,9 @@ function txt(st, s, size, color = Color.white(), bold = false) {
 }
 
 const I18N = {
-  en: { tPools: "Pools", tTrades: "Recent trades", buy: "Buy", sell: "Sell", price: "Price", open: "Tap a trade to open it in Tonviewer", pools: n => `${n} pools • TON`, poolsS: n => `${n} pools`, vol: "Volume 24h", liq: "Liquidity", liqS: "Liq.", fdv: "FDV", holders: "Holders", upd: "updated", total: "All pools", avail: "AGAMER available in all pools", res: "Reserves", err: "No data: " },
-  ru: { tPools: "Пулы", tTrades: "Последние сделки", buy: "Покупка", sell: "Продажа", price: "Цена", open: "Нажми на сделку, чтобы открыть её в Tonviewer", pools: n => `${n} пулов • TON`, poolsS: n => `${n} пул.`, vol: "Объём 24ч", liq: "Ликвидность", liqS: "Лик.", fdv: "FDV", holders: "Холдеры", upd: "обновлено", total: "Все пулы", avail: "AGAMER доступно во всех пулах", res: "Резервы", err: "Нет данных: " },
-  fa: { tPools: "استخرها", tTrades: "معاملات اخیر", buy: "خرید", sell: "فروش", price: "قیمت", open: "برای مشاهده در Tonviewer روی معامله بزنید", pools: n => `${n} استخر • TON`, poolsS: n => `${n} استخر`, vol: "حجم ۲۴س", liq: "نقدینگی", liqS: "نقدینگی", fdv: "ارزش کل", holders: "دارندگان", upd: "به‌روزرسانی", total: "همه استخرها", avail: "AGAMER موجود در همه استخرها", res: "ذخایر", err: "داده‌ای نیست: " },
+  en: { tPools: "Pools", tTrades: "Recent trades", buy: "Buy", sell: "Sell", price: "Price", open: "Tap a trade to open it in Tonviewer", pools: n => `${n} pools • TON`, poolsS: n => `${n} pools`, vol: "Volume 24h", liq: "Liquidity", liqS: "Liq.", fdv: "FDV", holders: "Holders", upd: "updated", total: "All pools", avail: "AGAMER available in all pools", res: "Reserves", err: "No data: ", tcache: "trades from cache" },
+  ru: { tPools: "Пулы", tTrades: "Последние сделки", buy: "Покупка", sell: "Продажа", price: "Цена", open: "Нажми на сделку, чтобы открыть её в Tonviewer", pools: n => `${n} пулов • TON`, poolsS: n => `${n} пул.`, vol: "Объём 24ч", liq: "Ликвидность", liqS: "Лик.", fdv: "FDV", holders: "Холдеры", upd: "обновлено", total: "Все пулы", avail: "AGAMER доступно во всех пулах", res: "Резервы", err: "Нет данных: ", tcache: "сделки из кэша" },
+  fa: { tPools: "استخرها", tTrades: "معاملات اخیر", buy: "خرید", sell: "فروش", price: "قیمت", open: "برای مشاهده در Tonviewer روی معامله بزنید", pools: n => `${n} استخر • TON`, poolsS: n => `${n} استخر`, vol: "حجم ۲۴س", liq: "نقدینگی", liqS: "نقدینگی", fdv: "ارزش کل", holders: "دارندگان", upd: "به‌روزرسانی", total: "همه استخرها", avail: "AGAMER موجود در همه استخرها", res: "ذخایر", err: "داده‌ای نیست: ", tcache: "معاملات از حافظه" },
 };
 // Widget Parameter: "lang,period,style" e.g. "ru,7d" (price line, default) / "ru,7d,candles" / "en,24h,hist" / "fa,30d"
 const QP = (typeof args !== "undefined" && args.queryParameters) || {};
@@ -483,9 +500,12 @@ async function build(fam) {
   }
   w.addSpacer();
   if (fam !== "large") return w;
-  const df = new DateFormatter(); df.dateFormat = "HH:mm"; line(w, T.upd + " " + df.string(new Date()) + (STALE ? " • cache" : ""), 8, GREY);
+  const df = new DateFormatter(); df.dateFormat = "HH:mm"; line(w, T.upd + " " + df.string(new Date()) + (STALE ? " • cache" : "") + tcacheNote(), 8, GREY); // v3.2
   return w;
 }
+
+// v3.2: "trades from cache dd.MM HH:mm" when tonapi failed and the trade list is (partly) the last good copy
+function tcacheNote() { if (!TSTALE) return ""; const f = new DateFormatter(); f.dateFormat = "dd.MM HH:mm"; return " • " + T.tcache + (TASOF ? " " + f.string(new Date(TASOF)) : ""); }
 
 async function showTable() {
   const d = await fetchData(); const trades = await fetchTrades(d.tonUsd);
@@ -506,7 +526,7 @@ async function showTable() {
       () => Safari.open("https://tonviewer.com/" + p.addr));
     add([tc(T.res + ": " + fres(p), "", GREY, 1)], 30, BK, () => Safari.open("https://tonviewer.com/" + p.addr));
   });
-  add([tc(T.tTrades + " (" + trades.length + ")", T.open, GREY, 1, true)], 44, HD);
+  add([tc(T.tTrades + " (" + trades.length + ")", T.open + tcacheNote(), GREY, 1, true)], 44, HD); // v3.2
   const df = new DateFormatter(); df.dateFormat = "dd.MM HH:mm";
   trades.forEach(t => {
     const buy = t.kind === "buy";
