@@ -22,3 +22,8 @@ footer{text-align:center;padding:40px 5vw;border-top:1px solid #f5c54222;color:v
 @media(prefers-reduced-motion:reduce){.logo{animation:none}}
 .grid.three{max-width:1000px;margin-inline:auto}
 .about{max-width:760px;margin:0 auto;text-align:center;font-size:1.2rem;line-height:1.8;color:var(--t)}
+
+.wallets .coin{display:flex;flex-direction:column;gap:0}
+.wallets h3{color:#fff;margin:0 0 .35em;font-size:1.2rem;text-align:left;background:none;-webkit-background-clip:unset;background-clip:unset}
+.wallets .wallet + .wallet{margin-top:28px;padding-top:24px;border-top:1px solid #f5c54222}
+.wallets .wallet .note{margin:.2em 0 12px}
