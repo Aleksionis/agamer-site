@@ -27,3 +27,10 @@ footer{text-align:center;padding:40px 5vw;border-top:1px solid #f5c54222;color:v
 .wallets h3{color:#fff;margin:0 0 .35em;font-size:1.2rem;text-align:left;background:none;-webkit-background-clip:unset;background-clip:unset}
 .wallets .wallet + .wallet{margin-top:28px;padding-top:24px;border-top:1px solid #f5c54222}
 .wallets .wallet .note{margin:.2em 0 12px}
+
+#play{scroll-margin-top:72px}
+@media(max-width:900px){#play{scroll-margin-top:136px}}
+@media(max-width:600px){#play{scroll-margin-top:160px}}
+#play .gameicon{display:block;width:112px;height:112px;margin:0 auto 16px;border-radius:22px;border:1px solid #f5c54255;box-shadow:0 0 30px #f5c54233;object-fit:cover}
+#play .playposter{display:block;width:100%;max-width:960px;height:auto;margin:18px auto;border-radius:16px;border:1px solid #f5c54233;box-shadow:0 0 50px #f5c54222}
+#play .sub + .sub{margin-top:.8em}
