@@ -28,9 +28,15 @@ footer{text-align:center;padding:40px 5vw;border-top:1px solid #f5c54222;color:v
 .wallets .wallet + .wallet{margin-top:28px;padding-top:24px;border-top:1px solid #f5c54222}
 .wallets .wallet .note{margin:.2em 0 12px}
 
-#play{scroll-margin-top:72px}
-@media(max-width:900px){#play{scroll-margin-top:136px}}
-@media(max-width:600px){#play{scroll-margin-top:160px}}
-#play .gameicon{display:block;width:112px;height:112px;margin:0 auto 16px;border-radius:22px;border:1px solid #f5c54255;box-shadow:0 0 30px #f5c54233;object-fit:cover}
-#play .playposter{display:block;width:100%;max-width:960px;height:auto;margin:18px auto;border-radius:16px;border:1px solid #f5c54233;box-shadow:0 0 50px #f5c54222}
-#play .sub + .sub{margin-top:.8em}
+#play,#poker{scroll-margin-top:72px}
+@media(max-width:900px){#play,#poker{scroll-margin-top:136px}}
+@media(max-width:600px){#play,#poker{scroll-margin-top:160px}}
+#play .gameicon,#poker .gameicon{display:block;width:112px;height:112px;margin:0 auto 16px;border-radius:22px;border:1px solid #f5c54255;box-shadow:0 0 30px #f5c54233;object-fit:cover}
+#play .playposter,#poker .playposter{display:block;width:100%;max-width:960px;height:auto;margin:18px auto;border-radius:16px;border:1px solid #f5c54233;box-shadow:0 0 50px #f5c54222}
+#play .sub + .sub,#poker .sub + .sub{margin-top:.8em}
+.fees{width:100%;max-width:520px;margin:22px auto 0;border-collapse:collapse;background:#0b0905;border:1px solid #f5c54244;border-radius:14px;overflow:hidden}
+.fees th,.fees td{padding:10px 16px;text-align:left;border-bottom:1px solid #f5c54222}
+.fees th{color:#ffd99a;font-size:.85rem;letter-spacing:.04em;text-transform:uppercase}
+.fees td{color:var(--t)}
+.fees tr:last-child td{border-bottom:0}
+.fees tbody tr:nth-child(even) td{background:#0006}
